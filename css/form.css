@@ -1,0 +1,13 @@
+body {
+  padding-top: 3%;
+  background-image: url("../css/fond.jpg");
+}
+
+.container {
+  padding: 1%;
+}
+
+#aidepassword{
+  font-weight: bold;
+  text-shadow: black 1px 1 1px;
+}

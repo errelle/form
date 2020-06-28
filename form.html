@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/form.css" rel="stylesheet">
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>FORM</title>
+  </head>
+  <body>
+
+    <!--container all-->
+    <div class="container bg-info rounded">
+      <!--form-->
+      <form>
+        <!--pseudo-->
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom01">Pseudo</label>
+            <input type="text" class="form-control" id="pseudo">
+          </div>
+        </div>
+        <!--mail + mdp-->
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="mail">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Mot de passe</label>
+            <input type="password" class="form-control" id="password">
+            <span id="aidepassword"></span>
+          </div>
+        </div>
+        <!--select-->
+        <div class="form-group col-md-4">
+          <select id="inputState" class="form-control">
+            <option selected>Être recontacté par</option>
+            <option> Responsable service</option>
+            <option> Responsable marketing</option>
+            <option> Responsable web</option>
+          </select>
+        </div>
+        <!--options-->
+        <!--checkbox-->
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                recevoir la newsletter
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                recevoir des annonces
+              </label>
+            </div>
+          </div>
+        <!--radio button-->
+          <div class="form-group col-md-6">
+            <label for="check">Recontacté entre :</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+              <label class="form-check-label" for="exampleRadios1">
+                9h et 12h
+              </label>
+            </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              12h et 14h
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <label class="form-check-label" for="exampleRadios3">
+              14 et 17h
+            </label>
+          </div>
+        </div>
+      </div>
+      <!--submit button-->
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+  </div>
+  <!--script-->
+  <script src="form.js"></script>
+  </body>
+</html>
